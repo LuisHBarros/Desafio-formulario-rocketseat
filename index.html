@@ -11,12 +11,16 @@
 </head>
 <body>
     <div class="page">
+
+        <body>
         <header>
             <h1>Avalie a sua mentoria</h1>
             <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
             <img src="images/cloud_stars.svg" alt="Uma nuvem com estrelas">
         </header>
-        <body>
+        <div class="form-title">
+            <h2>Informacoes Pessoais</h2>
+        </div>
             <form>
                 <div>
                     <fieldset>
@@ -31,8 +35,40 @@
                             </div>
                         </div>
                         <div class="input-wrapper">
-                            <label for="form-email">Email</label>
+                            <label for="form-email">Email <span>(digite um email valido)</span></label>
                             <input type="text" id="form-email" required min="8">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informacoes do mentor</legend>
+                        <div class="mentor-wrapper">
+                            <label for="form-mentor">Selecione quem foi o seu mentor</label>
+                            <input type="text" id="form-mentor">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="form-mentors-feedback">Feedback sobre o mentor</label>
+                            <textarea id="form-mentors-feedback"></textarea>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="form-doubts-clarified">
+                            <label for="form-doubts-clarified">Todas as minhas duvidas foram esclarecidas durante a mentoria</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Agendando proxima mentoria</legend>
+                        <div>
+                        <div class="input-wrapper">
+                            <label for="form-data">Data<span> (DD/MM/AAAA)</span></label>
+                            <input type="date" id="form-data">
+                        </div>
+                        <div>
+                            <label for="form-begin">Das</label>
+                            <input type="time" id="form-begin">
+                        </div>
+                        <div>
+                            <label for="form-end">Ate</label>
+                            <input type="time" id="form-end">
+                        </div>
                         </div>
                     </fieldset>
                 </div>
