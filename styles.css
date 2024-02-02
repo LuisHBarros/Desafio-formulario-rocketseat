@@ -1,0 +1,38 @@
+* {
+    --black-one: #293241;
+    --gray-one: #BFD7E4;
+    --orange-one: #F67669;
+    --white: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+legend {
+    font-family: "Staatliches", sans-serif;
+}
+
+body {
+    background-color: var(--gray-one);
+}
+
+body::before {
+    content: '';
+    height: 465px;
+    width: 100%;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    background-color: var(--black-one);
+}
+
+.page {
+    width: 736px;
+    margin: 0 auto;
+}
+
+header {
+    width: 319px;
+    padding-top: 107px;
+}

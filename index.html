@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="images/cloud_stars.svg" alt="Uma nuvem com estrelas">
+        </header>
+        <body>
+            <form>
+                <div>
+                    <fieldset>
+                        <div class="name-field">
+                            <div class="input-wrapper">
+                                <label for="form-firstName">Nome</label>
+                                <input type="text" id="form-firstName" required min="8">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="form-lastName">Sobrenome</label>
+                                <input type="text" id="form-lastName" required min="8">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="form-email">Email</label>
+                            <input type="text" id="form-email" required min="8">
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </body>
+        <footer><button class="submit-button">Salvar</button></footer>
+    </div>
+</body>
+</html>
