@@ -146,23 +146,53 @@ fieldset {
     align-items: center;
 }
 
-
 .checkbox-wrapper input {
-    display: none;
-}
-
-.checkbox-wrapper input::before {
-    content: "";
-    width: 24px;
     height: 24px;
+    width: 24px;
     border: 1px solid #e6e6f0;
     border-radius: 8px;
-    display: block;
+}
+
+.checkbox-wrapper input:focus label {
+    outline: 2px solid black;
+}
+
+.date-wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.date-wrapper>div:nth-child(1) {
+    width: 100%;
+}
+
+.date-wrapper>div:nth-child(2) {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.date-wrapper>div:nth-child(2) div {
+    width: 100%;
+}
+
+footer button {
+    background: #F67669;
+    color: #fff;
+    width: 622px;
+    height: 51px;
+    border-radius: 8px;
+    font-family: "Staatliches";
+    font-weight: 400;
+    font-size: 20px;
+    border: 0;
 
 }
 
+legend {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
 
-
-.checkbox-wrapper input:focus label::before {
-    outline: 2px solid black;
 }
